@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+/* Change the pagination dot color */
+.swiper-pagination-bullet {
+    background: #C2C1E7 !important; /* Change to your desired color */
+    opacity: 1; /* Make it fully visible */
+}
+
+/* Change the active dot color */
+    .swiper-pagination-bullet-active {
+    background: #4CAF4F !important; /* A darker shade of green */
+}

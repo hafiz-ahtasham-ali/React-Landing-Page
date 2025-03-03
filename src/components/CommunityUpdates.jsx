@@ -1,4 +1,7 @@
 import CommunityUpdatesCard from "./CommunityUpdatesCard";
+import Image_18 from "../assets/images/image-18.png";
+import Image_19 from "../assets/images/image-19.png";
+import Image_20 from "../assets/images/image-20.png";
 
 const CommunityUpdates = () => {
     return (
@@ -9,12 +12,15 @@ const CommunityUpdates = () => {
         </div>
         <div className="flex justify-center items-center gap-x-10 mt-6 px-6">
             <CommunityUpdatesCard 
+                image={Image_18}
                 description="Creating Streamlined Safeguarding Processes with OneRen" 
             />
             <CommunityUpdatesCard 
+                image={Image_19}
                 description="What are your safeguarding responsibilities and how can you manage them?" 
             />
             <CommunityUpdatesCard 
+                image={Image_20}
                 description="Revamping the Membership Model with Triathlon Australia" 
             />
         </div>

@@ -15,8 +15,9 @@ const Slider = () => {
       <SwiperSlide>
         <div className="w-full h-[599px] flex items-center justify-between px-10 bg-[#F5F7FA]">
             {/* Left Side - Text Content */}
-            <div className="max-w-md">
-                <h2 className="text-[44px] font-bold text-[#4D4D4D]">Lessons and insights from 8 years</h2>
+            <div className="max-w-l pl-47">
+                <h2 className="text-[48px] font-bold text-[#4D4D4D]">Lessons and insights</h2>
+                <h2 className="text-[48px] font-bold text-[#4CAF4F]">from 8 years</h2>
                 <p className="text-[13px] text-[#717171] mt-2">
                     Where to grow your business as a photographer: site or social media?
                 </p>
@@ -28,11 +29,13 @@ const Slider = () => {
             </div>
 
             {/* Right Side - Image */}
-            <img
-            src={Illustration}
-            alt="Slide 1"
-            className="w-[391px] h-[407px] object-contain"
-            />
+            <div className="flex justify-start w-[50%] pl-21">
+              <img
+                src={Illustration}
+                alt="Slide 1"
+                className="w-[391px] h-[407px] object-contain"
+              />
+            </div>
         </div>
         </SwiperSlide>
       <SwiperSlide>

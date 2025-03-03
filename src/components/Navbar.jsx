@@ -2,12 +2,12 @@ import Logo from "../assets/icons/Logo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[#F5F7FA] shadow-md p-4 flex items-center justify-between z-50">
+    <nav className="fixed top-0 left-0 w-full bg-[#F5F7FA] p-4 flex items-center justify-between z-50">
       {/* Logo */}
       <img src={Logo} alt="Nexcent Logo" className="w-[154.49px] h-[24px]" />
 
       {/* Navigation Links - Centered */}
-      <ul className="flex space-x-6 text-lg">
+      <ul className="flex space-x-11 text-lg">
         <li><a href="#" className="text-[#18191F] text-3l leading-tight font-semibold">Home</a></li>
         <li><a href="#" className="text-[#18191F] text-3l leading-tight font-semibold">Service</a></li>
         <li><a href="#" className="text-[#18191F] text-3l leading-tight font-semibold">Feature</a></li>
