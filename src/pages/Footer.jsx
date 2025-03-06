@@ -5,38 +5,34 @@ import { FiGlobe } from "react-icons/fi"; // Globe icon for website
 import { FaPaperPlane } from "react-icons/fa";
 
 const Footer = () => {
-    return (
+  return (
     <>
-    <FooterTop />
+      <FooterTop />
       <footer className="bg-gray-900 text-white py-10">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
             {/* Left Section - Logo & About */}
             <div>
-              <img src={Logo_2} alt="Nexcent Logo" className="w-[154.49px] h-[24px]" />
-              <p className="mt-3 text-gray-400">
-                Copyright © 2020 Nexcent ltd.
-              </p>
-              <p className="mt-2 text-gray-400">
-                All rights reserved
-              </p>
+              <img src={Logo_2} alt="Nexcent Logo" className="w-[154.49px] h-[24px] mx-auto md:mx-0" />
+              <p className="mt-3 text-gray-400">Copyright © 2020 Nexcent ltd.</p>
+              <p className="mt-2 text-gray-400">All rights reserved</p>
               {/* Social Media Icons */}
-                <div className="mt-4 flex space-x-4">
+              <div className="mt-4 flex justify-center md:justify-start space-x-4 flex-wrap">
                 <a href="#" className="bg-[#3C464C] text-white p-2 rounded-full hover:bg-gray-500 transition">
-                    <FaInstagram size={21} />
+                  <FaInstagram size={21} />
                 </a>
                 <a href="#" className="bg-[#3C464C] text-white p-2 rounded-full hover:bg-gray-500 transition">
-                    <FiGlobe size={21} />
+                  <FiGlobe size={21} />
                 </a>
                 <a href="#" className="bg-[#3C464C] text-white p-2 rounded-full hover:bg-gray-500 transition">
-                    <FaTwitter size={21} />
+                  <FaTwitter size={21} />
                 </a>
                 <a href="#" className="bg-[#3C464C] text-white p-2 rounded-full hover:bg-gray-500 transition">
-                    <FaYoutube size={21} />
+                  <FaYoutube size={21} />
                 </a>
-                </div>
+              </div>
             </div>
-  
+
             {/* Middle Section - Quick Links */}
             <div>
               <h3 className="text-xl font-semibold">Company</h3>
@@ -51,7 +47,7 @@ const Footer = () => {
 
             <div>
               <h3 className="text-xl font-semibold">Support</h3>
-              <ul className="mt-3 text-gray-400">
+              <ul className="mt-3 space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white transition">Help center</a></li>
                 <li><a href="#" className="hover:text-white transition">Terms of service</a></li>
                 <li><a href="#" className="hover:text-white transition">Legal</a></li>
@@ -59,26 +55,26 @@ const Footer = () => {
                 <li><a href="#" className="hover:text-white transition">Status</a></li>
               </ul>
             </div>
-            
-            <div> 
-                <h3 className="text-xl font-semibold">Stay up to date</h3>
-                <div className="mt-3 flex items-center bg-gray-700 p-3 rounded-lg">
-                    <input 
-                    type="email" 
-                    placeholder="Your email address" 
-                    className="bg-transparent flex-grow outline-none text-white placeholder-gray-400"
-                    />
-                    <button className="text-white">
-                        <FaPaperPlane size={20} />
-                    </button>
-                </div>
+
+            {/* Email Subscription */}
+            <div>
+              <h3 className="text-xl font-semibold">Stay up to date</h3>
+              <div className="mt-3 flex items-center bg-gray-700 p-3 rounded-lg w-full max-w-md mx-auto md:mx-0">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  className="bg-transparent flex-grow outline-none text-white placeholder-gray-400 w-full"
+                />
+                <button className="text-white">
+                  <FaPaperPlane size={20} />
+                </button>
+              </div>
             </div>
           </div>
-
         </div>
       </footer>
     </>
-    );
-  };
-  
-  export default Footer;  
+  );
+};
+
+export default Footer;
