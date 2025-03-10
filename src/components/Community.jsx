@@ -16,10 +16,10 @@ const Community = () => {
       </div>
 
       {/* Responsive Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 w-full max-w-6xl px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 w-full max-w-6xl">
         <CommunityCard 
           icon={Logo_1} 
-          title="Membership Organisations" 
+          title="Membership Organisations"
           description="Our membership management software provides full automation of membership renewals and payments." 
         />
         <CommunityCard 
